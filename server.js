@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const port = 3000;
 
 app.get('/greeting', (req, res) => {
     res.send('<h1>Hello, stranger</h1>')
@@ -12,6 +11,6 @@ app.get('/greeting/:name', (req, res) => {
     res.send(`Hola ${name}! It's so good to see you!`)
 })
 
-app.listen(port, () => {
+app.listen(3000, () => {
     console.log('Yes, I am listening on port 3000')
 })
