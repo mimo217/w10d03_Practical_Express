@@ -55,10 +55,10 @@ app.get('/fibonnaci/:number', (req, res) => {
         let num1 = 0;
         let num2 = 1;
 
-        while (num2 < n) {
-            let temp = num2;
+        while (num2 <= n) {
+            let tempValue = num2;
             num2 = num1 + num2
-            num1 = temp;
+            num1 = tempValue;
         }
         return num2 === n;
     };
